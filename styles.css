@@ -1,0 +1,177 @@
+/* Reset some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a1b9a, #ff4081);
+    color: #fff; /* White text to stand out against darker backgrounds */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    background: #333; /* Dark background for header */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.header-container h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: scaleIn 1.5s ease-out;
+    color: #ffeb3b; /* Yellowish color for header title for high contrast */
+}
+
+.header-container p {
+    font-size: 2rem;
+    color: #f0f0f0; /* Light gray text for subtitle */
+}
+
+/* Section Styling */
+section {
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    background: #fff;
+    color: #333; /* Dark text color for contrast */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+}
+
+/* Add a vibrant background for event details */
+.event-info {
+    background: #ff4081; /* Pink background for event info */
+    color: white; /* White text on the pink background */
+}
+
+/* Introduction Section */
+.introduction {
+    background: #f9f9f9;
+}
+
+.introduction h2 {
+    font-size: 2rem;
+    color: #333;
+    animation: fadeIn 2s ease-out 0.5s;
+}
+
+/* Event Info Section */
+.event-info {
+    background: #ff4081; /* Pink background */
+}
+
+.event-info h3 {
+    font-size: 1.8rem;
+}
+
+/* Registration Section */
+.registration {
+    background: #00bcd4; /* Cyan background */
+    color: #fff; /* White text for registration */
+}
+
+.registration h3 {
+    font-size: 1.8rem;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="phone"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fff;
+    color: #333; /* Dark text for readability */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="phone"]:focus {
+    border-color: #ff4081; /* Pink focus border */
+    background: #ffebee; /* Light pink background on focus */
+    transform: scale(1.02);
+}
+
+/* Button */
+button {
+    background: #673ab7; /* Purple background */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+button:hover {
+    background: #512da8; /* Darker purple on hover */
+    transform: scale(1.1);
+}
+
+/* Response Message */
+#response-msg {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1.2s;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
